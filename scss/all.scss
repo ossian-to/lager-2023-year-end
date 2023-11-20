@@ -1,0 +1,501 @@
+@charset "UTF-8";
+@import "initial";
+
+// 載入思源黑體，使用方式如下
+// font-family: 'Noto Sans TC', sans-serif;
+// font-weight: 900;
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+
+// 載入思源宋體
+// font-family: 'Noto Serif TC', serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+*{
+  box-sizing: border-box;
+  transition: font-size 0.3s, padding 0.3s, top 0.3s, right 0.3s, width 0.3s, max-width 0.3s, border-radius 0.3s;
+}
+
+em{
+  font-style: normal;
+}
+
+.ossian{
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  line-height: 1.5;
+  background-color: $document-bg-color;
+  section{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    article{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+  }
+}
+
+ul.logo-group{
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5em 0 0 0;
+  list-style: none;
+  max-width: 488px;
+  z-index: 2;
+  li{
+    &:nth-child(2){
+      display: grid;
+      grid-template-columns: 94px 94px 124px;
+    }
+    figure{
+      margin: 0;
+    }
+  }
+}
+
+.lay-kv{
+  width: 100%;
+  height: 743px;
+  background-image: url(../images/bg-01.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+// 活動LOGO
+.event-logo{
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1216px;
+  z-index: 1;
+  img{
+    width: 100%;
+  }
+}
+ul.event-logo-group{
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 1px;
+  z-index: 1;
+  border: 1px solid red;
+  li{
+    position: absolute;
+    top: 0;
+    // 破
+    &.title-1{
+      top: 0px;
+      left: calc(50% - 560px);
+    }
+    // 底盤二
+    &.title-2{
+      top: 310px;
+      left: calc(50% - 430px);
+    }
+    // 底盤一
+    &.title-3{
+      top: 50px;
+      left: calc(50% - 530px);
+    }
+    // ROG電競掌機
+    // &.title-4{
+    //   top: 610px;
+    //   left: calc(50% - 465px);
+    // }
+    // Galaxy Tab A9平板
+    // &.title-5{
+    //   top: 630px;
+    //   left: calc(50% + 20px);
+    // }
+    // samsung m7
+    &.title-6{
+      top: 520px;
+      left: calc(50% + 170px);
+    }
+    // 2023/12/27  (三) 16:00 起 - 2024/02/14  (三) 23:59 止
+    // &.title-7{
+    //   top: 570px;
+    //   left: calc(50% - 205px);
+    // }
+    // 通用卡限定
+    // &.title-8{
+    //   top: 690px;
+    //   left: calc(50% - 290px);
+    // }
+    // 雷爵會員獨家好禮抽抽送！多項高級3C送給你～
+    // &.title-9{
+    //   top: 360px;
+    //   left: calc(50% + 180px);
+    // }
+    // 雷爵樂園：年終感恩回饋祭
+    // &.title-10{
+    //   top: 140px;
+    //   left: calc(50% - 360px);
+    // }
+    // 星星
+    &.title-11{
+      top: 100px;
+      left: calc(50% - 430px);
+    }
+    // 彩帶一
+    &.title-12{
+      top: 10px;
+      left: calc(50% - 500px);
+    }
+    // 彩帶二
+    &.title-13{
+      top: 250px;
+      left: calc(50% - 630px);
+    }
+    // 彩帶三
+    &.title-14{
+      top: 280px;
+      left: calc(50% - 950px);
+    }
+    // 彩帶四
+    &.title-15{
+      top: 35px;
+      left: calc(50% + 275px);
+    }
+    // 彩帶五
+    &.title-16{
+      top: 170px;
+      left: calc(50% + 400px);
+    }
+    // 彩帶六
+    &.title-17{
+      top: 420px;
+      left: calc(50% + 490px);
+    }
+  }
+}
+
+// 區塊標題
+figure.title{
+  margin: 0 auto;
+  padding: 1.5em 0;
+  max-width: 307px;
+  img{
+    width: 100%;
+  }
+}
+
+// 活動說明
+.lay-description{
+  background-color: $custom-color-1;
+  background-image: url(../images/bg-02.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+ul.obj-group{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  z-index: 1;
+  li{
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.description{
+  position: relative;
+  margin: 0 auto;
+  padding: 3em 1em 2em 1em;
+  max-width: 1000px;
+  text-align: center;
+  z-index: 3;
+  em{
+    color: $custom-color-2;
+  }
+}
+
+// 全家便利商店
+
+.family-mart{
+  margin: 0 auto;
+  max-width: 95px;
+  img{
+    width: 100%;
+  }
+}
+
+ul.buy{
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
+  // align-items: stretch;
+  // flex-wrap: nowrap;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1200px;
+  list-style: none;
+  z-index: 2;
+  > li{
+    // padding-bottom: 3em;
+    // max-width: 400px;
+    width: 100%;
+  }
+}
+dl.buy-zone{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 1.25em;
+
+  dt,dd{
+    margin: 0;
+    padding: 0;
+  }
+  dt{
+    padding: 0.5rem 1rem;
+    font-size: 1.875rem;
+    color: black;
+    text-align: center;
+    em{
+      color: $custom-color-3;
+    }
+    background-color: white;
+  }
+  dd{
+    padding: 1rem;
+    height: 100%;
+    background-color: $custom-color-2;
+    ul{
+      list-style-type: disc;
+      li{
+        a{
+          color: $custom-color-3;
+        }
+      }
+    }
+    .buy-zone-note{
+      text-align: center;
+      color: black;
+    }
+  }
+}
+
+// 獎勵說明
+
+section.award-illustrate{
+  background-image: url(../images/grid.png);
+  > article{
+    padding: 1em;
+  }
+}
+
+// 三款遊戲：童話、天外、童話世界
+
+ul.game-group{
+  display: flex;
+  // align-items: stretch;
+  justify-content: center;
+  // gap: 2em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  >li{
+    overflow: hidden;
+    // padding-bottom: 1em;
+    max-width: 500px;
+    width: 100%;
+    background-color: $custom-color-2;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    border-radius: 1.25em;
+    &:nth-child(1){
+      padding-bottom: unset;
+    }
+    &:nth-child(2){
+      background-image: url(../images/obj-5.png);
+    }
+    &:nth-child(3){
+      background-image: url(../images/obj-6.png);
+    }
+    >h2{
+      margin: 0;
+      padding: 0.25rem 1rem;
+      font-size: 1.875rem;
+      color: black;
+      font-weight: normal;
+      text-align: center;
+      background-color: white;
+      em{
+        color: $custom-color-3;
+      }
+    }
+  }
+}
+
+.game-description{
+  padding: 1em;
+  >h3{
+    margin: 0;
+    padding-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.25;
+    em{
+      margin-right: 0.5em;
+      padding: 0 0.25em;
+      display: inline-block;
+      font-size: 1.125rem;
+      color: $custom-color-3;
+      background-color: white;
+      border: 1px solid $custom-color-3;
+      border-radius: 5px;
+    }
+    span{
+      color: $custom-color-4;
+    }
+  }
+}
+
+.game-import{
+  padding: 1rem;
+  font-size: 1.125rem;
+  color: $custom-color-3;
+  background-color: $custom-color-5;
+  border-radius: 10px;
+  ul{
+    padding-left: 1.25em;
+    list-style-type: disc;
+    li{
+      em{
+        color: white;
+        background-color: $custom-color-3;
+      }
+      .img-float{
+        margin: 0;
+        padding: 0.5em 0 0.5em 1em;
+        max-width: 139px;
+        float: right;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+ul.game-note-list{
+  list-style-type: disc;
+  li{
+    padding-top: 1rem;
+    font-size: 1.125rem;
+    color: $color-gray-8;
+    em{
+      color: $custom-color-4;
+    }
+  }
+}
+
+ul.gifts-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    max-width: 438px;
+    width: 100%;
+    text-align: center;
+    figure{
+      margin: 0;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.get-gift-note{
+  color: black;
+  text-align: center;
+}
+
+// 得獎者照片
+
+ul.photos-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0 0 0;
+  list-style: none;
+  li{
+    // max-width: 300px;
+    width: 100%;
+    figure{
+      margin: 0;
+      text-align: center;
+      color: black;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+// 注意事項
+
+section.event-note{
+  padding: 0 1em 1em;
+  font-size: 1rem;
+  color: $color-gray-8;
+  background-color: white;
+}
+
+ul.event-note-list{
+  margin: 0 auto;
+  padding-left: 1.25em;
+  padding-bottom: 2em;
+  max-width: 1200px;
+  li{
+    em{
+      color: white;
+      background-color: $custom-color-4;
+    }
+    mark{
+      color: $color-orange-3;
+      background-color: $color-orange-1;
+      // border: 1px solid $color-orange-2;
+    }
+    a{
+      color: $custom-color-4;
+    }
+  }
+}
+
+// footer
+
+footer{
+  margin: 0 auto;
+  padding: 2em 1em;
+  max-width: 100%;
+  color: $color-gray-5;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+// RWD 自適應設定
+
+@import "rwd";
