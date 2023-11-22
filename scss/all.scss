@@ -26,7 +26,7 @@ em{
   padding: 0;
   max-width: 1920px;
   line-height: 1.5;
-  background-color: $document-bg-color;
+  background-color: $custom-color-7;
   section{
     position: relative;
     margin: 0;
@@ -235,9 +235,6 @@ ul.obj-group{
 ul.buy{
   position: relative;
   display: flex;
-  // justify-content: space-between;
-  // align-items: stretch;
-  // flex-wrap: nowrap;
   gap: 1em;
   margin: 0 auto;
   padding: 0 1em;
@@ -245,8 +242,6 @@ ul.buy{
   list-style: none;
   z-index: 2;
   > li{
-    // padding-bottom: 3em;
-    // max-width: 400px;
     width: 100%;
   }
 }
@@ -294,6 +289,8 @@ dl.buy-zone{
 
 section.award-illustrate{
   background-image: url(../images/grid.png);
+  background-repeat: no-repeat;
+  background-position: left top;
   > article{
     padding: 1em;
   }
@@ -413,16 +410,30 @@ ul.gifts-group{
   margin: 0;
   padding: 0;
   list-style: none;
+  
   li{
     max-width: 438px;
     width: 100%;
     text-align: center;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: top center;
     figure{
       margin: 0;
+      a{
+        &:hover{
+          img{
+            transform: scale(0.9);
+          }
+        }
+        img{
+          transform: scale(1);
+          width: 100%;
+          transition: transform 0.3s;
+        }
+      }
     }
-    img{
-      width: 100%;
-    }
+    
   }
 }
 
@@ -444,12 +455,31 @@ ul.photos-group{
   li{
     // max-width: 300px;
     width: 100%;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: top center;
     figure{
       margin: 0;
       text-align: center;
       color: black;
+      
+      figcaption{
+        margin: 0 auto;
+        padding: 0 0.35em;
+        display: inline-block;
+        background-color: white;
+        transform: rotate(-6deg);
+        transition: transform 0.3s;
+      }
       img{
         width: 100%;
+        transform: rotate(4deg);
+        transition: transform 0.3s;
+      }
+      &:hover{
+        figcaption, img{
+          transform: rotate(0deg);
+        }
       }
     }
   }
@@ -482,6 +512,30 @@ ul.event-note-list{
     a{
       color: $custom-color-4;
     }
+  }
+}
+
+.go{
+  display: inline-block;
+  padding: 0 0.35em;
+  font-size: 0.75em;
+  color: $custom-color-3;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid $custom-color-3;
+  animation: jump 0.3s infinite;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  line-height: 1.25;
+}
+@keyframes jump {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(0.35em);
+  }
+  100%{
+    transform: translateX(0);
   }
 }
 
